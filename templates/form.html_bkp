@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+
+
+    <form method="POST" action=".">
+        <input id="post_form_id" name="fooput" value="" />
+        <input type="submit">
+    </form>
+
+    {% if result %}
+        You entered: {{  result  }}
+    {% endif %}
+    
+    <body>
+        <h1>Date and time: {{ time }}</h1>
+        <h2>Indoor weather plot</h2>
+    <img src="{{url_for('static', filename='aapl.png')}}" />
+    </body>
+
+</html>

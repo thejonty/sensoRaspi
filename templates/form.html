@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel="icon"
+              type="image/x-icon"
+              href="raspi.ico" />
+    </head>
+
+
+
+    {% if result %}
+        You entered: {{  result  }}
+    {% endif %}
+    
+    <body>
+    <center>
+        <h1><center>Indoor Weather Plot</center></h1>
+        <h3><center>Enter date in the format: YYYYMMDD</center></h3>
+        <form method="POST" action=".">
+            <input id="post_form_id" name="fooput" value="" />
+            <input type="submit">
+        </form>
+        <h3>Server Date and Time: {{ time }}</h3>
+    <img src="{{url_for('static', filename=filename1)}}" />
+    </center>
+    </body>
+
+</html>
